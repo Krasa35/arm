@@ -13,11 +13,10 @@ then
     chmod a+r $XAUTH
 fi
 
-docker stop ARM_03 || true && docker rm ARM_03 || true
+docker stop ARM_01 || true && docker rm ARM_01 || true
 
 docker run -it \
     --gpus all \
-    --workdir="/arm_ws" \
     --env="DISPLAY=$DISPLAY" \
     --env="QT_X11_NO_MITSHM=1" \
     --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
@@ -27,6 +26,6 @@ docker run -it \
     --env="NVIDIA_DRIVER_CAPABILITIES=all" \
     --privileged \
     --network=host \
-    --name="ARM_03" \
-    arm/lab03 \
+    --name="ARM_01" \
+    ubuntu \
     /bin/bash
