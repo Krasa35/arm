@@ -1,0 +1,8 @@
+/arm_ws/zzzLab07/dgps.txt /arm_ws/KeyFrameTrajectory.txt --verbose --plot trajs.png
+compared_pose_pairs 734 pairs
+absolute_translational_error.rmse 22.196390 m
+absolute_translational_error.mean 21.753602 m
+absolute_translational_error.median 20.945659 m
+absolute_translational_error.std 4.411411 m
+absolute_translational_error.min 13.528857 m
+absolute_translational_error.max 31.013506 m
